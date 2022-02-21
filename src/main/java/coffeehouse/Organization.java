@@ -14,6 +14,7 @@ public class Organization {
         try {
             String sql = "select * from menu";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.executeQuery();
 
 
         }
