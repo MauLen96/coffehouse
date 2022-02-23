@@ -2,6 +2,8 @@ package coffeehouse.entities;
 
 import coffeehouse.MyApp;
 
+import java.sql.SQLException;
+
 public class Employee extends Users{
     public Employee(){
         super();
@@ -11,7 +13,7 @@ public class Employee extends Users{
     }
 
 
-    public String Password(int password){
+    public String Password(int password) throws SQLException, ClassNotFoundException {
         MyApp menu = new MyApp();
         if(password == 1234){
             System.out.println(" ok , you'r in system");

@@ -12,8 +12,11 @@ public class Organization {
     public void ShowMenu() throws SQLException, ClassNotFoundException {
         Connection connection = db.DataBaseConn();
         try {
-            String sql = "select * from menu";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            String sql = "insert into menu( name , price ) values (? , ?)";
+            String sql2  = "select * from menu";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql2);
+//            preparedStatement.setString(1 , "sssssss");
+//            preparedStatement.setInt(2 , 500);
             preparedStatement.executeQuery();
 
 

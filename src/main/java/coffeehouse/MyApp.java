@@ -1,10 +1,11 @@
 package coffeehouse;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class MyApp {
 
-    public void Start(){
+    public void Start() throws SQLException, ClassNotFoundException {
         int choice = -1 ;
         Scanner scanner = new Scanner(System.in);
         while (choice != 0){
@@ -15,7 +16,9 @@ public class MyApp {
             choice = scanner.nextInt();
             switch (choice){
                 case 1 :
-                    ///
+                    Organization organization = new Organization();
+                    organization.ShowMenu();
+                    break;
                 case 2 :
                     ///
                 case 3 :
