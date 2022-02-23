@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class Organization {
     DB db  = new DB();
-
+    String add;
     public void ShowMenu() throws SQLException, ClassNotFoundException {
         Connection connection = db.DataBaseConn();
         try {
