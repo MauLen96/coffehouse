@@ -1,5 +1,7 @@
 package coffeehouse;
 
+import Order.Order;
+
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -20,7 +22,13 @@ public class MyApp {
                     organization.ShowMenu();
                     break;
                 case 2 :
-                    ///
+                    System.out.println(" enter id of product");
+                    int id = scanner.nextInt();
+                    System.out.println(" enter name of product");
+                    String name = scanner.nextLine();
+                     Order order = new Order(id , name);
+                     Organization organization1 = new Organization();
+                    organization1.takeOrder(order);
                 case 3 :
                     ///
                 case 4 :

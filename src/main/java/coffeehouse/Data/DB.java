@@ -11,7 +11,7 @@ public class DB {
         Connection connection = null;
         Statement statement = null;
         try {
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres" , "postgres" , "2295429!");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres" , "postgres" , "root");
             return connection;
         }
         catch (Exception e){
