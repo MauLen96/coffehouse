@@ -6,8 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class tables {
-
+public class Tables {
 
     public void TableOrder() throws SQLException, ClassNotFoundException {
         System.out.println("----");
@@ -16,14 +15,5 @@ public class tables {
         Connection connection = db.DataBaseConn();
         PreparedStatement preparedStatement = connection.prepareStatement("create table order_table (id_p int , name_p varchar (50))");
         preparedStatement.executeUpdate();
-    }
-
-    public void menu() throws SQLException, ClassNotFoundException {
-        DB db = new DB();
-        db.DataBaseConn();
-        Connection connection = db.DataBaseConn();
-        PreparedStatement preparedStatement = connection.prepareStatement("create table menu( id , )")
-
-
     }
 }
